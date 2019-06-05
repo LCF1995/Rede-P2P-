@@ -1,0 +1,16 @@
+      <div class="box-body table-responsive no-padding">
+                    <tr> 
+            <div class="col-sm-2">
+              <img class="img-responsive" src="file.png" alt="Photo">
+            </div>
+            </tr>
+        <table class="table table-hover">
+          <% cont = 0 %>
+          <% @results.each do |i| %>
+          <tr>
+            <%cont +=1 %>
+            <tr><%= i[:ip]%>|<%= i[:hash]%>|<%= @file%>|<%if cont == 1 %>0|<%= @mean %><%end%><%if cont == 2 %><%= @mean+1 %>|<%=@point_2%><%end%><%if cont == 3 %><%= @point_2+1 %>|<%=@point_3%><%end%>+</tr>
+          </tr>
+          <%end%>
+        </table>
+      </div>
