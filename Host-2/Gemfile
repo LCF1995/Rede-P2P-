@@ -1,9 +1,0 @@
-source :rubygems
-
-gem 'rubygems'
-gem 'sinatra'
-gem 'find'
-gem 'pdf/reader'
-gem 'digest/md5'
-gem 'socket'
-gem 'http'
